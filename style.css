@@ -208,7 +208,9 @@ flex-direction: row;;
     left:0px;
 }
 
-
+h1{
+    font-size: 48px;
+}
 }
 
 /* 
