@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --darkmagenta: #512051;
+    --pink: hsl(333, 80%, 67%);
+    --magenta2: hsl(303, 10%, 53%);
+    --magenta3: hsl(300, 24%, 96%);
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    width: 87.2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width:1200px;
+}
+
+section {
+    margin-top: 4.7333rem;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width:650px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--darkmagenta);
+    font-weight: 700;
+    font-size: 2.1333rem;
+    line-height: 2.1333rem;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+p {
+    margin-top: calc(18rem/15);
+    font-weight: 500;
+    color: var(--darkmagenta);
+    text-align: center;
+    font-style: italic;
+    padding: 0 20px;
+    font-size: .8rem;
+    line-height: 150%;
+
+}
+
+
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width:100%;
+}
+
+.rate {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--magenta3);
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+    display:flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+
+
+
+.whererated{
+    color:var(--darkmagenta);
+    font-weight:700;
+    font-size: calc(13rem/16);
+}
+
+
+.showstars{
+    
+    width: 40%;
+    display: block;
+    height: 2rem;
+    background:
+        url('/images/icon-star.svg'),
+        url('/images/icon-star.svg'),
+        url('/images/icon-star.svg'),
+        url('/images/icon-star.svg'),
+        url('/images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: 0 top, 25% top, 50% top, 75% top, 100% top;
+    content: "";
+    max-width: 180px;
+} 
+
+.card {
+    max-width: 320px;
+    height:234px;
+    background-color: var(--darkmagenta);
+    display: flex;
+    flex-direction: column;
+    color: var(--pink);
+    margin: 1rem auto 0 auto;
+    border-radius: 5px;
+    padding: 2.8rem;
+}
+
+.person {
+    display: flex;
+}
+
+.comment {
+    color: var(--magenta3);
+    font-size: 68%;
+    line-height: 180%;
+    margin-top: calc(27rem/15);
+  }
+
+img {
+    max-width: 100%;
+    width: calc(40rem/15);
+    height: calc(40rem/15);
+    border-radius: 50%;
+
+}
+
+.cv {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name_ {
+    font-size: calc(13rem/15);
+    font-weight: 600;
+    color: white;
+}
+
+.role {
+    font-size: calc(13rem/15);
+}
+
+
+
+
+
+@media(min-width:1000px) {
+
+    .testimonials {
+        flex-direction: row;
+        justify-content: space-between;
+            }
+            .card{
+                margin-right:1rem;
+            }
+            .card:nth-child(2){
+                margin-top:2rem;
+
+            }
+            .card:nth-child(3){
+                margin-right: 0;
+                margin-top:4rem;
+            }
+
+
+.reviews{
+
+flex-direction: row;
+max-width: 1500px;
+justify-content: flex-start;
+align-items: flex-start;;
+}
+
+.ratings{
+    width:80%;
+    margin-right:5rem;
+   
+}
+
+
+.rate{
+flex-direction: row;;
+}
+.rate:nth-child(2){
+    margin-left:2.5rem;
+}
+.rate:nth-child(3){
+    margin-left:5rem;
+}
+
+.rate:before{
+    left:0px;
+}
+
+
+}
+
+/* 
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
